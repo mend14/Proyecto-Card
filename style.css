@@ -1,0 +1,92 @@
+body{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 58px;
+}
+.container{
+    background-color:  #315dee ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+}
+.container .sub-container{
+    width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow:  0px 5px 0.1px rgba(120, 228, 247, 0.5) ;
+
+}
+.container .sub-container .contenido{
+   
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+}
+
+.container .sub-container .contenido .icono{
+    margin-right: 10px;
+   
+}
+
+.title{
+    font-weight: bolder;
+   
+}
+
+.container .sub-container .actions{
+    
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+.container .sub-container .actions button{
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.container .sub-container .actions .btn-descargar{
+    background-color: #234bce;
+    color: white;
+
+}
+.container .sub-container .actions .btn-descargar:hover{
+    background-color: #3b5bc2;
+   
+
+}
+.container .sub-container .actions .btn-volver{
+    background-color: white;
+    border: solid 1px #ccc;
+
+}
+.container .sub-container .actions .btn-volver:hover{
+    background-color: #eee;
+   
+}
+@media  (max-width:500px) {
+    .container .sub-container{
+        width: 80%;  
+    }
+    .container .sub-container .actions{
+        flex-direction: column;
+    }
+    
+}
